@@ -9,7 +9,11 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import AllCycles from './hooks/lifecycle/AllCycles';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/containers/father';
-
+import OptionalRender from './components/pure/optionalRender';
+import HomePage from './pages/home/HomePage';
+import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
+import TaskFormik from './components/pure/forms/taskFormik';
 function App() {
   return (
     <div className="App">
@@ -33,9 +37,17 @@ function App() {
         <AllCycles />
         <GreetingStyled name="David" /> 
       </header> */}
-      <TaskListComponent />
+      {/** Ejemplos de renderizado condicional */}
+      {/** <OptionalRender />*/}
+      {/*<TaskListComponent />*/}
       {/**Gestion de eventos 
       <Father /> */}
+
+
+      {/**Ejemplos de uso de formik y Yup */}
+      {/*<LoginFormik></LoginFormik>*/}
+      {/* <RegisterFormik></RegisterFormik> */}
+      <TaskFormik />
     </div>
   );
 }
